@@ -1,0 +1,73 @@
+
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Neue Machina', sans-serif;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+#sudoku-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 2rem;
+    background-color: #f4f4f4;
+}
+
+
+#sudoku-board{
+    border-collapse: collapse;
+}
+
+#sudoku-board tbody tr td{
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+#sudoku-board tbody tr td input{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+#sudoku-board tbody tr:nth-child(3n) td{
+    border-bottom: 2px solid #000;
+}
+
+#sudoku-board tbody tr td:nth-child(3n){
+    border-right: 2px solid #000;
+}
+
+#solve-btn{
+    padding: .4rem 1.4rem;
+    font-size: 1.4rem;
+    background-color: #E9F2A2;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 32px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 32px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 32px -6px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#solve-btn:hover{
+    background-color: #cad28d;
+}
+
+#solve-btn:active{
+    background-color: #000;
+    color: #aaa;
+}

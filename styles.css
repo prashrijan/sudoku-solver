@@ -1,4 +1,9 @@
 
+::selection{
+    background-color: #E9F2A2;
+    color: #000;
+}
+
 *{ 
     margin:0;
     padding:0;
@@ -11,6 +16,12 @@ html,body{
     height:100%;
 }
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #sudoku-container{
     display: flex;
     align-items: center;
@@ -18,13 +29,15 @@ html,body{
     flex-direction: column;
     height: 100%;
     gap: 2rem;
-    background-color: #f4f4f4;
+
 }
 
 
 #sudoku-board{
     border-collapse: collapse;
+    background-color: #f4f4f4
 }
+
 
 #sudoku-board tbody tr td{
     border: 1px solid #ccc;
@@ -50,7 +63,15 @@ html,body{
     border-right: 2px solid #000;
 }
 
-#solve-btn{
+.result{
+    font-size: 1.3rem;
+}
+
+.button-container .reset-btn{
+    display: none;
+}
+
+button{
     padding: .4rem 1.4rem;
     font-size: 1.4rem;
     background-color: #E9F2A2;
@@ -63,11 +84,16 @@ html,body{
     transition: all .5s ease;
 }
 
-#solve-btn:hover{
+button:hover{
     background-color: #cad28d;
 }
 
-#solve-btn:active{
+button:active{
     background-color: #000;
     color: #aaa;
+}
+
+
+footer p{
+    color: #bcbcbc;
 }

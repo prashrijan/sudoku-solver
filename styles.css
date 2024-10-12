@@ -21,6 +21,10 @@ body{
     justify-content: center;
 }
 
+h1{
+    font-size: clamp(2rem, 2.5vw, 5rem); 
+}
+
 #sudoku-container{
     display: flex;
     align-items: center;
@@ -28,7 +32,6 @@ body{
     flex-direction: column;
     height: 100%;
     gap: 2rem;
-
 }
 
 
@@ -111,8 +114,8 @@ footer p{
     }
 
     button {
-        padding: .3rem 1rem; 
-        font-size: 1rem;  
+        padding: .7rem 2rem; 
+        font-size: 1.5rem;  
     }
 
     .result {
